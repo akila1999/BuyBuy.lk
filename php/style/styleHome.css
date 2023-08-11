@@ -1,0 +1,339 @@
+/*this thing applicable for all html element */
+    /*-------------  common -------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+    /*------------- Header section -----------------*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+    flex: 1;
+    text-align: center;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li {
+    display: inline-block; /*make it harizonal*/
+    margin-right: 20px;
+    border-left: 3px solid red;
+    
+}
+nav ul li a{
+    transition: border 0.2s;    
+}
+nav ul li a:hover {
+    border-bottom: 3px solid blue;
+}
+nav ul li:hover {
+    border-left: none;
+} 
+a {
+    text-decoration: none;
+    color:  #555;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.menu-icon {
+    
+    margin-left: 20px;
+    display: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.header {
+    background: radial-gradient(#1ddefd , #ffffff);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+    /*----------- featured categories  -------------*/
+
+.categories {
+    margin: 80px 0;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px; 
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+.col-3 img {
+    width: 100%;
+    border-radius: 50%;
+}
+/*.col-3 p {
+    text-align: center;
+} */
+
+    /*----------------- offers  ----------------------*/
+
+.offers {
+    background: radial-gradient(#0041ff, #fff); 
+    border-radius: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 30px 0;
+}
+.col-2 .offers-img {
+    padding: 80px;
+}
+
+    /*-------------- Product ---------------*/
+
+.col-4{
+    flex-basis: 25%; /* we need 4 coloumn */
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px; 
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title:after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:: translateX(-50%)
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-10px);/*it move on 5px in y exit*/
+}
+
+
+    /*------------ footer ---------------*/
+
+.footer {
+    background: #000;
+    color: navajowhite;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p {
+    color: ghostwhite;
+}
+.footer h3 {
+    color: navajowhite;
+    margin-bottom: 20px;
+}
+.footer h1 {
+    color: navajowhite;
+    margin-bottom: 20px;
+    
+}
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    min-width: 25px;
+    margin-bottom: 20px;
+}
+.footer-col-1 {
+    flex-basis: 30%;
+}
+.footer-col-2 {
+    flex: 1; /* it used available space */
+    text-align: center;
+    border-left: 2px solid navajowhite;
+    border-right: 2px solid navajowhite;
+}
+.footer-col-3 {
+    flex-basis: 30%;
+    text-align: center;
+}
+.app-logo {
+    margin-top: 10px;
+}
+.app-logo img{
+    width: 50px;
+}
+.footer-col-3 ul {
+    list-style-type: none
+}
+.footer-col-3 ul li a {
+    color: ghostwhite;
+}
+.footer-col-3 ul li a:hover {
+    color: #555;
+}
+.footer hr {
+    border: none;
+    background: navajowhite;
+    margin: 20px;
+    height: 1px;
+}
+.copyright {
+    text-align: center;
+   
+}
+
+/*--------------- Registration Page -----------------------*/
+
+.register-Account {
+    padding: 50px 0;
+    background: radial-gradient(#1ddefd , #ffffff);
+}
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box {
+    width: 320px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #1ddefd, #ffffff);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transform: 0.5s;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #1ddefd, #ffffff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.chech-box {
+    margin: 30px 10px 30px 0;
+    
+}
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login {
+    left: 50px;
+}
+#register {
+    left: 450px;
+}
+.register-Account h1{
+    text-align: center;
+}
+
+/*---------  media query for less than 600 screen size -----*/
+@media only screen and (max-width: 600px){
+    .row {
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}

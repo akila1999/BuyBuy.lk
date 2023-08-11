@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="Stylesheet" href="style/Checkout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Confirmation">
+            <img src="image/tick.png">
+            <h2>Thank You</h2>
+            <p>Your Order has been successfully Completed. Thanks!</p>
+            <button type="button" onclick="openPopup()">OK</button>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="popup" id="popup">
+            <img src="image/cart.jpg">
+            <div class="border">
+            <h2>*Want To SHOP Again*</h2>
+            <p>***We Are Just One Click Away***</p>
+            <p>***Everything You Want In One PLACE***</p>
+            </div>
+            <button type="button" id="CheckOut">SHOP AGAIN</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup (){
+            popup.classList.add("open-Popup");
+        }
+
+        document.getElementById("CheckOut").addEventListener("click", myFunction);
+                function myFunction(){
+                    window.location.href="Home.html"
+                }
+    </script>
+
+    
+</body>
+</html>

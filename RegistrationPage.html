@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyBuy.lk | Sign in</title>
+    <link rel="stylesheet" href="style/styleHome.css">
+</head>  
+<body>
+    
+    <!-- ------------------ Header --------------------- -->
+    
+ <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <img src="image/icons/buy-logo1.png" width="120px;">
+            </div>
+            <nav>
+                <ul>
+            <!--    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>    -->
+                    <li><a href="loginPage.html">login</a></li> 
+                    <li><a href="RegistrationPage.html">Register</a></li> 
+                </ul>
+            </nav>
+     <!--       <a href=""><img src="image/icons/icons8.png" width="50px" height="50px"></a>  -->
+            
+        </div>  
+    </div>
+ </div>
+    
+    <!-- ---------------- Register Page -------------------- -->
+    
+ <div class="register-Account">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+       <!--         <h1>Register Here</h1>  -->
+                <img src="image/cover/fashion-cover10-r.png">
+            </div>
+            
+            <div class="col-2">
+                <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Buyer</button>
+                <button type="button" class="toggle-btn" onclick="register()">Seller</button>
+            </div>
+    <!--    <div class="social-icons">
+                <img src="f-logo.png">
+                <img src="f-logo.png">
+                <img src="f-logo.png">
+            </div>     -->
+            <form id="login" class="input-group" method="POST" action="register.php">
+                <input type="text" class="input-field" name="bName" placeholder="Buyer Name" required>
+                <input type="email" class="input-field" name="bEmail" placeholder="Buyer email" required>
+                <input type="password" class="input-field" name="bPassword" placeholder="password" required>
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & condition</span>
+                <button type="submit" class="submit-btn">Register</button>       
+            </form>
+            
+            <form id="register" class="input-group" method="POST" action="sellerRegister.php">
+                <input type="text" class="input-field" name="sName" placeholder="Seller Name" required>
+                <input type="email" class="input-field" name="sEmail" placeholder="Seller email" required>
+                <input type="password" class="input-field" name="sPassword" placeholder="password" required>
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & condition</span>
+                <button type="submit" class="submit-btn">Register</button>       
+            </form>
+        </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- ------------------ Footer --------------------- -->
+    
+<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Follow Us on social media:</h3>
+                    <div class="app-logo">
+                        <!--<img src="image/icons/In-logo.png">-->
+                        <a href=""><img src="image/icons/f-logo.png"></a>
+                        <a href=""><img src="image/icons/Twitter_Logo.png"></a>
+                        <a href=""><img src="image/icons/WhatsApp_Logo.png"></a>
+                        <!--<a href=""><img src="image/icons/yt_logo.png"></a>-->
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h1>BuyBuy.lk</h1>
+                    <h4>CONTACT US</h4>
+                    <p>info.buybuylk@gmail.com</p>
+                    <p>+941199557788</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li><a href="">FAQ's</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and condition</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - buybuy.lk</p>
+        </div>
+    </div>
+    
+    
+    <!-- -------- js for register page --------- -->
+    
+    <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+        
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+        
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+    </script>
+    
+</body> 
+</html>

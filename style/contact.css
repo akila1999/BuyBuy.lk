@@ -1,0 +1,365 @@
+/*this thing applicable for all html element */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+    /*------------- Header section -----------------*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+    flex: 1;
+    text-align: center;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li {
+    display: inline-block; /*make it harizonal*/
+    margin-right: 20px;
+    border-left: 3px solid red;
+    
+}
+nav ul li a{
+    transition: border 0.2s;    
+}
+nav ul li a:hover {
+    border-bottom: 3px solid blue;
+}
+nav ul li:hover {
+    border-left: none;
+} 
+a {
+    text-decoration: none;
+    color:  #555;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.menu-icon {
+    
+    margin-left: 20px;
+    display: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.header {
+    background: radial-gradient(#1ddefd , #ffffff);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px; 
+}
+
+
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family:Helvetica, Arial, sans-serif;
+}
+
+
+.cont {
+    background: radial-gradient(#1ddefd , #ffffff);
+}
+.form-con{
+    margin: 50px 0;
+}
+body
+{
+
+
+min-height:100vh;
+
+}
+
+.wrapper
+{
+width:720px;
+background: #fff;
+border-radius:5px;
+    background-color: whitesmoke;
+}
+.wrapper h4 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.wrapper header
+{
+font-size: 22px;
+font-weight: 600;
+padding: 20px 30px;
+border-bottom:1px solid #bfbfbf;
+}
+
+.wrapper form
+{
+margin: 35px 30px;
+}
+
+form .db1-field
+{
+display:flex;
+align-items:center;
+margin-bottom:25px;
+justify-content:space-between;
+}
+
+.db1-field .field
+{
+height: 50px;
+width: calc(100% / 2 - 13px;);
+}
+
+form .field input,
+form .message textarea
+{
+height: 100%;
+width:100%;
+outline:none;
+padding:0 2px 0 20px;
+font-size:16px;
+border-radius: 6px;
+border: 1px solid #bfbfbf;
+}
+
+form .field input::placeholder,
+form .message textarea::placeholder
+{
+color:#bfbfbf;
+}
+
+form .field input::placeholder,
+form .message textarea::placeholder
+{
+color: #bfbfbf;
+}
+
+form .field input:focus,
+form .message textarea:focus
+{
+border: 2px solid #0D6EFD;
+}
+
+.wrapper .field i
+{
+position: absolute;
+left:18px;
+top:50%
+color:#bfbfbf;
+font-size:17px;
+pointer-events: none;
+transform: translateY(-50%)
+}
+
+form .field input:focus ~ i
+{
+color: #0D6EFD;
+}
+
+form .message
+{
+position: relative;
+}
+
+form .message i
+{
+top: 20px;
+font-size: 20px;
+}
+
+form .message textarea
+{
+min-width: 100%;
+max-width: 100%;
+min-height: 220px;
+max-height: 300px;
+padding: 15px 20px 0 2px;
+}
+
+form .button-area
+{
+margin: 25px 0;
+}
+
+.button-area button
+{
+font-size: 18px;
+border: none;
+color: #fff;
+cursor: pointer;
+border-radius: 5px;
+background: #0D6EFD;
+padding: 13px 25px;
+}
+
+.button-area span{
+color: #0D6EFD;
+margin-left:30px;
+}
+
+
+    /*------------ footer ---------------*/
+
+.footer {
+    background: #000;
+    color: navajowhite;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p {
+    color: ghostwhite;
+}
+.footer h3 {
+    color: navajowhite;
+    margin-bottom: 20px;
+}
+.footer h1 {
+    color: navajowhite;
+    margin-bottom: 20px;
+    
+}
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    min-width: 25px;
+    margin-bottom: 20px;
+}
+.footer-col-1 {
+    flex-basis: 30%;
+}
+.footer-col-2 {
+    flex: 1; /* it used available space */
+    text-align: center;
+    border-left: 2px solid navajowhite;
+    border-right: 2px solid navajowhite;
+}
+.footer-col-3 {
+    flex-basis: 30%;
+    text-align: center;
+}
+.app-logo {
+    margin-top: 10px;
+}
+.app-logo img{
+    width: 50px;
+}
+.footer-col-3 ul {
+    list-style-type: none
+}
+.footer-col-3 ul li a {
+    color: ghostwhite;
+}
+.footer-col-3 ul li a:hover {
+    color: #555;
+}
+.footer hr {
+    border: none;
+    background: navajowhite;
+    margin: 20px;
+    height: 1px;
+}
+.copyright {
+    text-align: center;
+   
+}
+
+
+/* -------------about css ---------------*/
+
+.box-a
+{
+background-color:#333;
+color:#fff;
+border-top:2px RoyalBlue solid;
+border-right:2px RoyalBlue solid;
+border-bottom:2px RoyalBlue solid;
+border-left:2px RoyalBlue solid;
+
+
+
+/*border*/
+
+border-top-style: dotted;
+border-right-style: dotted;
+border-bottom-style: dotted;
+border-left-style: dotted;
+
+/*padding*/
+
+padding:20px 20px 20px 20px;
+
+/*margin*/
+
+margin-top:40px;
+}
+
+.container1
+{
+width:70%;
+margin: auto    ;
+background: radial-gradient(#1ddefd , #ffffff);
+padding-bottom: 40px;
+}
+
+.box-a h1
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:italic;
+	letter-spacing: 0.1em;
+	word-spacing: 0.3em;
+}
+
+/* media queries*/
+
+media(max-width:900px)
+main-section{
+{
+float: none; 
+width:100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
